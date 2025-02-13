@@ -1,8 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/fredericka-the-great');
-@import url('https://fonts.cdnfonts.com/css/bethalora');
-@import url('https://fonts.cdnfonts.com/css/avocade');
-@import url('https://fonts.cdnfonts.com/css/hello-good-old-outline');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* RESET */
 
 html{ /* sélecteur propriété valeur */
@@ -29,7 +25,7 @@ html{ /* sélecteur propriété valeur */
       overflow: hidden;    
   }
 :root{
-  --bgcolor-theme: #ce564d;
+  --bgcolor-theme: #F8485E;
   --bgcolor: #554e4e;
   --text-color: #ffffff;
   --text-deux: #33302f;
@@ -56,14 +52,29 @@ html{ /* sélecteur propriété valeur */
     justify-content: center;
     align-items: center;
     width: 90%;
-    margin: 1rem auto;
-    font-size: small;
+    margin: 3rem auto;
+    font-size: 1.7rem;
+    
   }
-
+.sir_presentation{
+ 
+  width: 90%;
+  margin: 3rem auto;
+  font-size: 1.7rem;
+}
+span{
+  display: inline;
+}
+.red-text {
+  color: var(--bgcolor-theme);
+  font-weight: bold; /* Facultatif, pour mettre en gras */
+}
+.img_sir{
+  margin:2rem;
+}
 p{
     padding: 2rem;
     line-height: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 
@@ -209,6 +220,7 @@ p{
     text-align: center;
     font-size: 2rem;
     transform: rotateY(180deg);
+    cursor: pointer;
   }
   .img card{
     width: 70%;

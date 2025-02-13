@@ -1,13 +1,37 @@
-* {
+/* RESET */
+
+html{ /* sélecteur propriété valeur */
+  font-size: 62.5%;  /* 1.000rem root em 10px */
+  scroll-behavior: smooth;
+}
+body{
+  font: 1.6rem sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+}
+h1,h2,h3,img,p,ul{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+header,main{
     margin: 0;
     padding: 0;
-  }
-  
-  body, html {
-    font-family: segoe ui;
-    font-size: 100%;
-    height: 100%;
-  }
+    overflow: hidden;    
+}
+:root{
+--bgcolor-theme: #ce564d;
+--bgcolor: #554e4e;
+--text-color: #ffffff;
+--text-deux: #33302f;
+}
+/**{
+  box-sizing: border-box;
+}*/
   
   /* ****************************************************
                           CONTENEDOR
