@@ -38,6 +38,9 @@ html{ /* sélecteur propriété valeur */
 /* THEME */
 
 /* HEADER*/
+main{
+  width: 100%;
+}
 .h1{
     display: flex;
     justify-content: center;
@@ -57,13 +60,18 @@ html{ /* sélecteur propriété valeur */
     
   }
 .sir_presentation{
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 90%;
-  margin: 3rem auto;
+  margin: 2rem auto;
   font-size: 1.7rem;
+
 }
 span{
   display: inline;
+  margin: 0;
 }
 .red-text {
   color: var(--bgcolor-theme);
@@ -71,13 +79,13 @@ span{
 }
 .img_sir{
   margin:2rem;
+  width: 80%;
 }
 p{
     padding: 2rem;
-    line-height: 2rem;
+    line-height: 3rem;
     
 }
-
 .u_presentation{
     justify-content: center;
     align-items: center;
@@ -101,6 +109,10 @@ p{
     gap: 2rem;
   }
 .card_secops {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 70rem;
     height: 20rem;
     perspective: 1000px;
@@ -156,9 +168,9 @@ p{
 
 .bandeau_h3{
     background-color: #554e4e;
-    height: 8rem;
+    height: 4rem;
     text-align: center;
-    padding: 1.7rem;
+    padding: 1rem;
     color: #fff;
     font-size: xx-large;
 }
@@ -167,12 +179,16 @@ p{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
     margin: 3rem auto;
     padding: 4rem;
     gap: 15rem;
   }
   .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     width: 20rem;
     height: 30rem;
     perspective: 1000px;
