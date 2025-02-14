@@ -88,6 +88,34 @@ span{
   margin:2rem;
   width: 60%;
 }
+/* knowledge card */
+.knowledge{
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  background-color: #F2F2F2;
+  margin: 3rem auto;
+  gap: 1rem;
+}
+.h4_knowledge{
+  text-align: center;
+  color: var(--bgcolor-theme);
+}
+/*  bouton more information */
+.more_information{
+  background-color: var(--bgcolor-theme);
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
 p{
     padding: 2rem;
     line-height: 3rem;
@@ -104,6 +132,7 @@ p{
     line-height: 1.1rem;
     padding: 0.7rem;
   }
+
 /*   CARDS */
 
 .card_security{
