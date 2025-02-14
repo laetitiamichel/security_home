@@ -88,6 +88,8 @@ span{
   margin:2rem;
   width: 60%;
 }
+
+/* KNOWLEDGE TEMPLATE */
 /* knowledge card */
 .knowledge{
   display: flex;
@@ -98,9 +100,8 @@ span{
   justify-content: center; 
   margin-top: 3rem;
   gap: 2rem;
-  /* knowledge container */
-
 }
+  /* knowledge container */
 .knowledge_card{
   display: flex;
   flex-direction: column;
@@ -115,10 +116,11 @@ span{
   text-align: center;
   color: var(--bgcolor-theme);
   text-transform: uppercase;
+  height: 6rem;
 }
 .p_knowledge{
   flex-grow: 1;
-  height: 15rem;
+  /* height: 15rem; */
 }
 /*  bouton more information */
 .more_information{
@@ -135,6 +137,57 @@ span{
   color: #ffffff;
   text-align: center;
 }
+/* FIN KNOWLEDGE */
+
+/* TEMPLATE CONTACTS */
+.knowledge{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center; 
+  margin-top: 3rem;
+  gap: 2rem;
+}
+  /* knowledge container */
+.contacts_card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Garde le bouton en bas */
+  align-items: center;
+  width: 27rem; /* Ajuste la largeur pour en mettre 4-5 par ligne */
+  height: 43rem; /* Hauteur fixe */
+  background-color: #F2F2F2;
+  padding: 1rem;
+}
+.h4_contacts{
+  text-align: center;
+  color: var(--bgcolor-theme);
+  text-transform: uppercase;
+  height: 6rem;
+}
+.p_contacts{
+  flex-grow: 1;
+  /* height: 15rem; */
+}
+/*  bouton more information */
+.more_information{
+  background-color: var(--bgcolor-theme);
+  /* padding: 2rem; */
+  margin-top: auto; /* Force le bouton à rester en bas */
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* FIN TEMPLATE CONTACTS */
 p{
     padding: 2rem;
     line-height: 3rem;
@@ -152,8 +205,7 @@ p{
     padding: 0.7rem;
   }
 
-/*   CARDS */
-
+/*   CARDS HOME PAGE */
 .card_security{
     display: flex;
     flex-direction: row;
@@ -296,3 +348,5 @@ p{
   .img card{
     width: 70%;
   }
+
+/*   FIN CARDS HOME PAGE */
