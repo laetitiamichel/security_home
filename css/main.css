@@ -91,21 +91,40 @@ span{
 /* knowledge card */
 .knowledge{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-content: center; 
+  margin-top: 3rem;
+  gap: 2rem;
+  /* knowledge container */
+
+}
+.knowledge_card{
+  display: flex;
   flex-direction: column;
-  width: 30rem;
+  justify-content: space-between; /* Garde le bouton en bas */
+  align-items: center;
+  width: 27rem; /* Ajuste la largeur pour en mettre 4-5 par ligne */
+  height: 43rem; /* Hauteur fixe */
   background-color: #F2F2F2;
-  margin: 3rem auto;
-  gap: 1rem;
+  padding: 1rem;
 }
 .h4_knowledge{
   text-align: center;
   color: var(--bgcolor-theme);
+  text-transform: uppercase;
+}
+.p_knowledge{
+  flex-grow: 1;
+  height: 15rem;
 }
 /*  bouton more information */
 .more_information{
   background-color: var(--bgcolor-theme);
-  padding: 2rem;
-  margin: 2rem auto;
+  /* padding: 2rem; */
+  margin-top: auto; /* Force le bouton à rester en bas */
   width: 15rem;
   display: flex;
   flex-direction: column;
