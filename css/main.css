@@ -49,6 +49,13 @@ main{
     padding: 5rem;
     margin: 5rem;
 }
+.welcome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--bgcolor-theme);
+}
 .security_presentation{
     display: flex;
     flex-direction: column;
