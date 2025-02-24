@@ -41,7 +41,10 @@ header,main{
     min-height: 100%;
     overflow: auto;
   }
-  
+  .logo_devoteam{
+    height: 5rem;
+    display: block;
+  }
   /* ENLACES */
   a {
     color: #fff;
