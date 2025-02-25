@@ -1,5 +1,5 @@
-default:
-  image: ruby:3.2
+image: alpine
+
 pages:
   script:
     - mkdir public
