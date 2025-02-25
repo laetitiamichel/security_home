@@ -139,7 +139,6 @@ span{
 }
 /* FIN KNOWLEDGE */
 
-/* TEMPLATE CONTACTS */
 .knowledge{
   display: flex;
   flex-direction: row;
@@ -151,43 +150,7 @@ span{
   gap: 2rem;
 }
   /* knowledge container */
-.contacts_card{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Garde le bouton en bas */
-  align-items: center;
-  width: 27rem; /* Ajuste la largeur pour en mettre 4-5 par ligne */
-  height: 43rem; /* Hauteur fixe */
-  background-color: #F2F2F2;
-  padding: 1rem;
-}
-.h4_contacts{
-  text-align: center;
-  color: var(--bgcolor-theme);
-  text-transform: uppercase;
-  height: 6rem;
-}
-.p_contacts{
-  flex-grow: 1;
-  /* height: 15rem; */
-}
-/*  bouton more information */
-.more_information{
-  background-color: var(--bgcolor-theme);
-  /* padding: 2rem; */
-  margin-top: auto; /* Force le bouton à rester en bas */
-  width: 15rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1rem;
-  text-decoration: none;
-  color: #ffffff;
-  text-align: center;
-}
 
-/* FIN TEMPLATE CONTACTS */
 p{
     padding: 2rem;
     line-height: 3rem;
@@ -274,12 +237,14 @@ p{
   }
 
 .bandeau_h3{
-    background-color: #554e4e;
+    background-color: var(--bgcolor-theme);
     height: 4rem;
     text-align: center;
+    margin-top: 4rem;
     padding: 1rem;
     color: #fff;
     font-size: xx-large;
+    scroll-margin-top: 60px; /* La même valeur que la hauteur du menu */
 }
 .flex_cards{
     display: flex;
@@ -291,7 +256,7 @@ p{
     padding: 4rem;
     gap: 15rem;
   }
-  .card {
+  .card{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -301,7 +266,7 @@ p{
     perspective: 1000px;
   }
  
-  .card-inner {
+  .card-inner{
     width: 100%;
     height: 100%;
     position: relative;
