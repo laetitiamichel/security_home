@@ -103,13 +103,15 @@
             margin-bottom: 5px; 
 		
 			h3{
-				font-weight:400;
+				font-weight:200;
+                font-size: medium;
 			}
 		}
 
 		.info-bio{	
             margin-top: 5px;
             white-space: pre-line;
+            font-size: small;
 		}
 		.info-social{
 			flex-grow:1;
@@ -144,7 +146,7 @@
 					text-align:center;
 					background-size:100% 200%;
 					background-position-y: 10%;
-					font-size:2em;
+					font-size:2rem;
 					color:rgba(0,0,0,.8);
 					cursor:pointer;
 					&:hover{
@@ -168,7 +170,6 @@
 .social-icons .sm.mail i {
     color: #fff;
   }
-  
   .social-icons .sm.mail:hover i {
     color: #fff !important;
   }
@@ -179,3 +180,57 @@
     border-radius: 50%;
     object-fit: cover;
   }
+
+
+/* formulaire contact */
+.row > * {
+    padding: 0 10px; }
+
+    .contact {
+        padding-left: 60px;
+        padding-right: 60px; }
+        @media (max-width: 1199px) {
+          .contact {
+            padding-left: 10px;
+            padding-right: 10px; } }
+        @media (max-width: 991px) {
+          .contact {
+            padding-left: 0;
+            padding-right: 0; } }
+        .contact .row {
+          margin: 0 -15px; }
+          .contact .row > * {
+            padding: 0 15px; }
+        .contact__shape .shape {
+          position: absolute; }
+          .contact__shape .shape--1 {
+            top: 42%;
+            left: 2%; }
+          .contact__shape .shape--2 {
+            top: 36%;
+            right: 0; }
+          
+
+.contact-form .title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 45px; }
+
+    @media (max-width: 767px) {
+      .contact-form .title {
+        font-size: 26px;
+        margin-bottom: 35px; } }
+        
+  .contact-form input, .contact-form textarea {
+    height: 60px;
+    background-color: #F9F9F9;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #EFF1F6; }
+  .contact-form textarea {
+    min-height: 172px; }

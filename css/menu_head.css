@@ -67,6 +67,7 @@ header,main{
     position:fixed;
     z-index: 1000;
     background-color: #000000;
+    height: 7rem;
     width: 100%;  /* Prend toute la largeur de la page */
     margin: 0;  /* Supprime les marges */
     padding: 0;  /* Évite tout espace autour */
@@ -76,6 +77,9 @@ header,main{
   .navbar-menu .menu {
     display: block;
     text-align: center;
+    margin-top: 1rem;
+    font-size: larger;
+    height: 7rem;
   }
   
   /* List items*/
@@ -101,6 +105,7 @@ header,main{
   /* List items de submenus */
   .navbar-menu .menu li ul li {
     display: block;
+
   }
   
   .navbar-menu .menu li ul li a:active {
