@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --bgcolor-theme: #F8485E;
     --bgcolor: #554e4e;
@@ -38,9 +35,9 @@
 
 
   /* end shape */
-  .pg-footer {
+/*   .pg-footer {
     font-family: 'Roboto', sans-serif;
-  }
+  } */
   
   
   .footer {

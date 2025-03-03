@@ -6,12 +6,12 @@ html{ /* sélecteur propriété valeur */
     scroll-behavior: smooth;
   }
   body{
-    font: 1.6rem sans-serif;
+   /*  font: 1.6rem sans-serif; */
     height: 100vh;
     margin: 0;
     padding: 0;
-    letter-spacing: 0.1rem;
-    line-height: 1.5;
+  /*   letter-spacing: 0.1rem;
+    line-height: 1.5; */
   }
   h1,h2,h3,img,p,ul{
     margin: 0;
@@ -240,7 +240,7 @@ p{
     background-color: var(--bgcolor-theme);
     height: 4rem;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 6.2rem;
     padding: 1rem;
     color: #fff;
     font-size: xx-large;

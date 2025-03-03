@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* .bg_img {
   background-size: cover;
   background-position: center;
@@ -185,7 +186,7 @@
     display: flex;
     flex-direction: row;
     margin: 2rem;
-    
+
     max-width: 20rem;
     max-height: 20rem;
 
