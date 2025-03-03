@@ -154,6 +154,7 @@
     justify-items: center;
     align-items: center;
     margin: 2rem;
+    border: solid 0.5rem #000000;
   }  
   
     .blog-single__meta ul {

@@ -15,7 +15,9 @@
       <link rel="stylesheet" href="../css/main.css">
       <link rel="stylesheet" href="../css/menu_head.css">
       <link rel="stylesheet" href="../css/breadcrumb.css">
+      <link rel="stylesheet" href="../css/caroussel.css">
       <link rel="stylesheet" href="../css/footer.css">
+
       
 
 
@@ -26,9 +28,10 @@
   <!-- THEME -->
 
   <body>
-      <!-- PAGE ACCUEIL -->
-      <main class="container">
-          <header>
+    
+    <main class="container">
+      <!-- MENU -->
+        <header>
             <nav class="navbar-menu">
               
               <!-- Menu normal -->
@@ -93,9 +96,9 @@
               </nav> <!-- Fin mini menu -->
               
             </nav> <!-- Fin menu general (nav) -->
-          </header>
-      <!-- breadcrumb start -->
-      <section class="breadcrumb pos-rel bg_img" style="background-image: url('../asset/secOps/breadcrumb_bg.jpg');">
+        </header>
+    <!-- breadcrumb start -->
+    <section class="breadcrumb pos-rel bg_img" style="background-image: url('../asset/secOps/breadcrumb_bg.jpg');">
         <div class="container">
             <h2 class="breadcrumb__title">Security Incident Response</h2>
         </div>
@@ -109,7 +112,6 @@
         </div>
     </section>
     <!-- breadcrumb end -->
-
     <!-- blog start -->
     <section class="blog-single pt-125 pb-120">
         <div class="container">
@@ -140,25 +142,95 @@
                                     <span>- Robert Vibes</span>
                                 </blockquote>
                             </div>
-                            <div class="blog-single__thumb">
+                            <!-- <div class="blog-single__thumb">
                               <img src="../asset/secOps/sir.png" alt="">
-                          </div>
-                            <!-- <div class="blog-single__images mt-55">
-                                <div class="row mt-none-20">
-                                    <div class="col-lg-6 mt-20">
-                                        <img src="../asset/secOps/sir.png" alt="">
-                                    </div>
-                                    <div class="col-lg-6 mt-20">
-                                        <img src="../asset/secOps/sir.png" alt="">
-                                    </div>
-                                </div>    
+                            </div>
+                            <div class="blog-single__thumb">
+                              <img src="../asset/secOps/sir_1.png" alt="">
+                            </div>
+                            <div class="blog-single__thumb">
+                              <img src="../asset/secOps/threat_2.png" alt="">
                             </div> -->
                             
                     </article>
-                </div>  
-              </div>  
-        </div>            
+                </div>
+            </div>
+        </div>                 
     </section>
+    <!-- CAROUSSEL-->
+    <div class="container2">
+      <div class="slider">
+          <input type="radio" name="testimonial" id="t-1" />
+          <input type="radio" name="testimonial" id="t-2" />
+          <input type="radio" name="testimonial" id="t-3" checked />
+          <input type="radio" name="testimonial" id="t-4" />
+          <input type="radio" name="testimonial" id="t-5" />
+  
+          <div class="testimonials mb-8">
+              <label class="item" for="t-1">
+                  <div class="mycard" id="projet_1">
+                      <div>
+                          <img src="../asset/secOps/sir.png" alt="nivel5" class="cardimg" />
+                          <p class="carddescription">Projet Batman</p>
+                      </div>
+                  <div>
+                 
+                      </div>
+                  </div>
+              </label> 
+              <label class="item" for="t-2">
+                  <div class="mycard" id="projet_2">
+                      <div>
+                          <img src="../asset/secOps/threat_2.png" alt="nivel5" class="cardimg" />
+                          <p class="carddescription">Projet PHP</p>
+                      </div>
+                  <div>       
+                      </div>
+                  </div>
+              </label>
+              <label class="item" for="t-3">
+                  <div class="mycard" id="projet_3">
+                      <div>
+                          <img src="../asset/secOps/sir.png" alt="nivel5" class="cardimg" />
+                          <p class="carddescription">Projet gmail</p>
+                      </div>
+                      <div>
+                      </div>
+                  </div>
+              </label>       
+              <label class="item" for="t-4">
+                  <div class="mycard" id="projet_4">
+                      <div>
+                          <img src="../asset/secOps/sir.png" alt="nivel5" class="cardimg" />
+                          <p class="carddescription">Projet Ligues</p>
+                      </div>
+                      <div>
+                      </div>
+                  </div>
+              </label>
+              <label class="item" for="t-5">
+                  <div class="mycard" id="projet_5">
+                      <div>
+                          <img src="./asset/projets/projet_3_display.png" alt="nivel5" class="cardimg" />
+                          <p class="carddescription">Projet Display</p>
+                      </div>
+                      <div>       
+                      </div>
+                  </div>
+              </label>
+              
+          </div>
+          <div class="dots">
+            <label for="t-1"></label>
+            <label for="t-2"></label>
+            <label for="t-3"></label>
+            <label for="t-4"></label>
+            <label for="t-5"></label>
+  
+          </div>
+        </div>
+      </div>
+    <!-- END CAROUSSEL-->
     <!-- blog end -->   
   </main>           
   <div class="pg-footer">
@@ -291,7 +363,8 @@
         </div>
       </div>
     </footer>
-      <script src="./js/menu.js"></script>
-      <script src="./js/cards.js"></script>
+      <script src="../js/menu.js"></script>
+      <script src="../js/caroussel.js"></script>
+      <script src="../js/clicImageZoom.js"></script>
   </body>
   </html>
