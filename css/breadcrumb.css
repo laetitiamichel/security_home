@@ -45,6 +45,9 @@
   /*----------------------------------------*/
   /*  21. blog
   /*----------------------------------------*/
+  .container{
+    margin-top: 5rem;
+  }
   @media (max-width: 767px) {
     .blog {
       padding: 80px 0; } }
@@ -148,20 +151,8 @@
         margin-left: 27px;
         font-size: 13px; }
   
-  .blog-single__thumb {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    margin: 2rem;
-    border: solid 0.5rem #000000;
-  }  
-  
-    .blog-single__meta ul {
-      margin-top: -10px; }
-      .blog-single__meta ul li {
-        margin-top: 10px; }
-  
+
+ 
   .blog-single__content {
     padding: 0 110px; }
     @media (max-width: 1199px) {
