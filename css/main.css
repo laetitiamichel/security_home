@@ -90,83 +90,104 @@ span{
 }
 
 /* KNOWLEDGE TEMPLATE */
-/* knowledge card */
-.knowledge{
+/* KNOWLEDGE BASE - Modern Card Style */
+.knowledge {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: space-around;
-  justify-content: center; 
-  margin-top: 3rem;
-  gap: 2rem;
-}
-  /* knowledge container */
-.knowledge_card{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Garde le bouton en bas */
-  align-items: center;
-  width: 27rem; /* Ajuste la largeur pour en mettre 4-5 par ligne */
-  height: 43rem; /* Hauteur fixe */
-  background-color: #F2F2F2;
-  padding: 1rem;
-}
-.h4_knowledge{
-  text-align: center;
-  color: var(--bgcolor-theme);
-  text-transform: uppercase;
-  height: 6rem;
-}
-.p_knowledge{
-  flex-grow: 1;
-  /* height: 15rem; */
-}
-/*  bouton more information */
-.more_information{
-  background-color: var(--bgcolor-theme);
-  /* padding: 2rem; */
-  margin-top: auto; /* Force le bouton à rester en bas */
-  width: 15rem;
-  display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Cards en colonne */
   justify-content: center;
   align-items: center;
-  border-radius: 1rem;
-  text-decoration: none;
-  color: #ffffff;
-  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
 }
-/* FIN KNOWLEDGE */
 
-.knowledge{
+/* Knowledge Card Container */
+.knowledge_card {
+  width: 60%; /* 60% de la largeur */
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: space-around;
-  justify-content: center; 
-  margin-top: 3rem;
-  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 2rem;
 }
-  /* knowledge container */
 
-p{
-    padding: 2rem;
-    line-height: 3rem;
-    
+/* Effet au survol */
+.knowledge_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.u_presentation{
-    justify-content: center;
-    align-items: center;
-    text-align: justify;   
-    list-style: disc;
-    padding: 1rem; 
+
+/* Image en haut de la carte */
+.knowledge_card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Titre de la carte */
+.h4_knowledge {
+  font-size: 1.8rem;
+  color: var(--bgcolor-theme);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+/* Contenu de la carte */
+.p_knowledge {
+  font-size: 1.4rem;
+  color: var(--bgcolor);
+  flex-grow: 1;
+  text-align: justify;
+  line-height: 1.6;
+  padding-bottom: 1rem;
+}
+
+/* Style du bouton moderne */
+.more_information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bgcolor);
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+ /*  padding: 1rem 1.5rem; */
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  width: 60%;
+  text-align: center;
+  margin: 0.2rem auto;
+}
+
+/* Effet au survol du bouton */
+.more_information:hover {
+  background: #e63946;
+  transform: scale(1.05);
+}
+
+/* Ajout d'un effet de clic */
+.more_information:active {
+  transform: scale(0.95);
+}
+
+/* Responsive : Ajustement pour mobiles */
+@media (max-width: 768px) {
+  .knowledge_card {
+      width: 90%; /* Plus large sur mobile */
   }
-.li_presentation{
-    line-height: 1.1rem;
-    padding: 0.7rem;
-  }
+}
+
+/* FIN KNOWLEDGE */
 
 /*   CARDS HOME PAGE */
 .card_security{
@@ -315,4 +336,100 @@ p{
   }
 
 /*   FIN CARDS HOME PAGE */
+
+/* scroll */
+/* From Uiverse.io by mrhyddenn */ 
+.scrolldown {
+  --color: white;
+  --sizeX: 30px;
+  --sizeY: 50px;
+  position: fixed;
+  right: 20px; /* Positionné à droite */
+  bottom: 50px; /* Distance du bas */
+  width: var(--sizeX);
+  height: var(--sizeY);
+  margin-left: var(sizeX / 2);
+  border: calc(var(--sizeX) / 10) solid var(--color);
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.scrolldown::before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: var(--color);
+  border-radius: 100%;
+  animation: scrolldown-anim 2s infinite;
+  box-sizing: border-box;
+  box-shadow: 0px -5px 3px 1px #2a547066;
+}
+
+@keyframes scrolldown-anim {
+  0% {
+    opacity: 0;
+    height: 6px;
+  }
+
+  40% {
+    opacity: 1;
+    height: 10px;
+  }
+
+  80% {
+    transform: translate(0, 20px);
+    height: 10px;
+    opacity: 0;
+  }
+
+  100% {
+    height: 3px;
+    opacity: 0;
+  }
+}
+
+.chevrons {
+  padding: 6px 0 0 0;
+  margin-left: -3px;
+  margin-top: 48px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chevrondown {
+  margin-top: -6px;
+  position: relative;
+  border: solid var(--color);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+}
+
+.chevrondown:nth-child(odd) {
+  animation: pulse54012 500ms ease infinite alternate;
+}
+
+.chevrondown:nth-child(even) {
+  animation: pulse54012 500ms ease infinite alternate 250ms;
+}
+
+@keyframes pulse54012 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
 
