@@ -1,22 +1,18 @@
-default:
-  image: ruby:3.2
+image: ruby:3.2
+
+before_script:
+  - gem install bundler
+  - bundle install
 
 pages:
-  tags:
-    - jekyll
   script:
-    - echo "=== FICHIERS DANS LE REPO ==="
-    - dir
-    - echo "=== CONTENU DU FICHIER GEMFILE ==="
-    - type Gemfile
-    - echo "=== LIGNE D'ERREUR CI-DESSOUS ==="
-    - bundle install
     - bundle exec jekyll build -d public
   artifacts:
     paths:
       - public
   only:
     - main
+
 
 
 
