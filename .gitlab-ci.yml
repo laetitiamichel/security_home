@@ -4,8 +4,17 @@ default:
 pages:
   tags:
     - jekyll
+pages:
   script:
-    - gem install bundler
+    - echo "=== PATH actuel ==="
+    - echo $PATH
+    - echo "=== Ruby version ==="
+    - ruby -v
+    - echo "=== Bundler version ==="
+    - bundler -v
+    - echo "=== Contenu du Gemfile ==="
+    - type Gemfile
+    - echo "=== Fin affichage ==="
     - bundle install
     - bundle exec jekyll build -d public
   artifacts:
@@ -13,4 +22,5 @@ pages:
       - public
   only:
     - main
+
 
