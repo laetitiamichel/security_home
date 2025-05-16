@@ -13,31 +13,21 @@
 	margin:auto;
     
 }
-.container_coreTeam{
-    display:flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: space-between;
-   /*  gap: 10px; */
-}
-
-.display{	
-	display:flex;
-	justify-content:space-around;
-	flex-wrap:wrap;
-	.display-item{
-		flex-grow:1;
-		flex-basis:1px;
-		display:flex;
-		justify-content:space-around;
-		padding:15px;
-		max-width:100%;
-	}
-}
-.display-item {
-    flex: 0 0 calc(33.33% - 20px); /* 33,33% de la largeur, en retirant l'espace pour les marges */
-    margin: 15px;
+.display {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* 👉 centre les cartes */
+	gap: 20px; /* espace régulier entre les cartes */
+	padding: 1rem;
   }
+  
+  .display-item {
+	flex: 1 1 calc(25% - 20px);
+	max-width: calc(25% - 20px);
+	box-sizing: border-box;
+  }
+  
+  
 
 .card:hover {
     /* Un effet plus prononcé au survol */
