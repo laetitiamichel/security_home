@@ -447,3 +447,65 @@ span{
   margin: 1rem auto;
 
 }
+
+/* PARTIE ARTICLE  */
+.def_module{
+  text-align: center;
+  font-size: 4.5rem;
+  margin: 1rem;
+}
+
+.img_blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.img_blog img {
+  max-width: 900px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.article_section_photo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+.paragraphe {
+  flex: 1;
+  margin: 7rem;
+/*   font-family: 'Georgia', serif; */
+  font-size: 1.5rem;       /* Texte plus grand */
+  line-height: 1.8;         /* Espacement confortable */
+  color: #222;
+}
+
+.image_article img {
+  max-width: 600px;         /* Image plus grande */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre douce */
+}
+
+
+@media (min-width: 1600px) {
+  .article_section_photo {
+    max-width: 1900px;
+  }
+
+  .paragraphe {
+    font-size: 2.5rem; /* Texte très grand pour un effet impactant */
+  }
+
+  .image_article img {
+    max-width: 900px; /* Image plus large */
+  }
+}
+
