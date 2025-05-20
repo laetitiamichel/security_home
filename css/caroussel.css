@@ -42,44 +42,44 @@
     flex-direction: column;
     justify-content: center;
     object-fit: contain;
-    margin: 2rem;
+  /*   margin: 2rem; */
   }
-  .carddescription {
+/*   .carddescription {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--text-color);
+    color: var(--text-deux);
     text-align: center;
-    font-size: 5rem;
+    font-size: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
+  } */
   
   .testimonials {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 100%;
-    height: 70%;
+    width: 110%;
+    height: 80%;
     perspective: 50rem;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+   /*  margin-top: 6rem;
+    margin-bottom: 3rem; */
     overflow: hidden;
   }
   .testimonials .item {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
-    height: 90%; 
+    width: 60%;
+    height: 87%; 
     border-radius: 1.5rem;
     border-width: 0.2rem;
     --tw-border-opacity: 1;
     position: absolute;
     box-sizing: border-box;
     background-color: #fff;
-    padding: 1rem;
+   /*  padding: 1rem; */
     text-align: center;
     transition: transform 0.4s;
     /* -webkit-transform-style: preserve-3d; */
@@ -89,7 +89,7 @@
   }
 .testimonials .item img {
     width: 63rem;
-    height: 47rem;
+    height: 40rem;
   }
 
   .dots {

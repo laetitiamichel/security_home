@@ -3,6 +3,8 @@
 html{ /* sélecteur propriété valeur */
   font-size: 62.5%;  /* 1.000rem root em 10px */
   scroll-behavior: smooth;
+  margin: 0;      
+  padding: 0;
 }
 body{
   font: 1.6rem sans-serif;
@@ -23,6 +25,10 @@ header,main{
     padding: 0;
     overflow: hidden;    
 }
+* {
+  box-sizing: border-box;
+}
+
 :root{
 --bgcolor-theme: #ce564d;
 --bgcolor: #554e4e;
@@ -40,6 +46,8 @@ header,main{
     background: url("https://subtlepatterns.com/patterns/ricepaper.png");
     min-height: 100%;
     overflow: auto;
+     margin: 0;      
+    padding: 0; 
   }
   .logo_devoteam{
     height: 5rem;
@@ -71,6 +79,7 @@ header,main{
     width: 100%;  /* Prend toute la largeur de la page */
     margin: 0;  /* Supprime les marges */
     padding: 0;  /* Évite tout espace autour */
+    top: 0;
 }
   
   /* Menu */
