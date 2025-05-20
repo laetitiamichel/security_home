@@ -260,7 +260,7 @@ span{
   /* titres SECOPS ET IRM */
 .bandeau_h3{
     background-color: var(--bgcolor);
-    height: 4rem;
+    height: 6rem;
     text-align: center;
     margin-top: 6.2rem;
     padding: 1rem;

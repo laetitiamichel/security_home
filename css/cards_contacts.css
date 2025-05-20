@@ -80,7 +80,7 @@
 	.card-info{
 		flex-basis:56,66665%;
 		flex-grow:1;
-		padding:0 15px;
+		padding: 0;
 		text-align:center;
 		display: -webkit-box; 
 		display: -moz-box;
@@ -103,6 +103,9 @@
             margin-top: 5px;
             white-space: pre-line;
             font-size: small;
+			width: 100%;
+			display: block;
+			line-height: 3rem;
 		}
 		.info-social{
 			flex-grow:1;
@@ -125,7 +128,7 @@
 				.sm{
                     width: 100%;
 					flex-basis:40px;
-					height:40px;
+					height:45px;
 					transition:all .3s ease-in-out;
 					display: -webkit-box; 
 					display: -moz-box;
