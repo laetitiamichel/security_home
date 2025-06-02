@@ -497,6 +497,13 @@ span{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Ombre douce */
 }
 
+.video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
 
 @media (min-width: 1600px) {
   .article_section_photo {
